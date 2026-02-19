@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing View</title>
+</head>
+<body style="padding:20px;">
+    <link rel="stylesheet" href="style.css">
+    <div class="container">
+        <main>
+            <article>
+                <img src="NIKEEE.jfif" alt="NIKE SHOE">
+                <p>Price: $29.99</p>
+                <a href="product1-details.html">View Details</a>
+            </article>
+            <article>
+                <img src="ADIDAS.jfif" alt="ADIDAS SHOE">
+                <p>Price: $49.99</p>
+                <a href="product2-details.html">View Details</a>
+            </article>
+            <article>
+                <img src="PRADAAA.jfif" alt="PRADA">
+                <p>Price: $19.99</p>
+                <a href="product3-details.html">View Details</a>
+            </article>
+           
+        </main>
+        <aside>
+            <h2>Filter Products</h2>
+            <form>
+                <fieldset>
+                    <legend>Category</legend>
+                    <label><input type="checkbox" name="category" value="clothing"> Clothing</label><br>
+                    <label><input type="checkbox" name="category" value="shoes"> Shoes</label><br>
+                    <label><input type="checkbox" name="category" value="accessories"> Accessories</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Sort by Price</legend>
+                    <label><input type="radio" name="sort" value="low-high"> Low to High</label><br>
+                    <label><input type="radio" name="sort" value="high-low"> High to Low</label>
+                </fieldset>
+                    <br>
+                <button type="submit">Apply Filters</button>
+            </form>
+        </aside>
+    </div>
+</body>
+</html>
