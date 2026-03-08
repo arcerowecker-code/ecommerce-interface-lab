@@ -2,53 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>ShopEase - Landing Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Listing View</title>
 </head>
 <body style="padding:20px;">
     <link rel="stylesheet" href="style.css">
-    <div class="container">
-        <br>
-        <a href="WST LAB2 (1).html"><button style="border-radius: 30px; padding: 20px ; width: 80px;"><strong>BACK</strong></button></a>
-        <br>
-        <br>
-        <main>
-            <article>
-                <img src="#" alt="HEADPHONE">
-                <p>Price: $29.99</p>
-                <a href="WST LAB2 (3).html">View Details</a>
-            </article>
-            <article>
-                <img src="ADIDAS.jfif" alt="ADIDAS SHOE">
-                <p>Price: $49.99</p>
-                <a href="product2-details.html">View Details</a>
-            </article>
-            <article>
-                <img src="PRADAAA.jfif" alt="PRADA">
-                <p>Price: $19.99</p>
-                <a href="product3-details.html">View Details</a>
-            </article>
-           
-        </main>
-        <aside>
-            <h2>Filter Products</h2>
-            <form>
-                <fieldset>
-                    <legend>Category</legend>
-                    <label><input type="checkbox" name="category" value="clothing"> Clothing</label><br>
-                    <label><input type="checkbox" name="category" value="shoes"> Shoes</label><br>
-                    <label><input type="checkbox" name="category" value="accessories"> Accessories</label>
-                </fieldset>
+    <header>
+        <h1 style="font-size: 50PX;">UEPSHOP</h1 >
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-                <fieldset>
-                    <legend>Sort by Price</legend>
-                    <label><input type="radio" name="sort" value="low-high"> Low to High</label><br>
-                    <label><input type="radio" name="sort" value="high-low"> High to Low</label>
-                </fieldset>
-                    <br>
-                <button type="submit">Apply Filters</button>
-            </form>
-        </aside>
-    </div>
+    <section id="hero">
+        <h1>Welcome to ShopEase</h1>
+        <p>Your one-stop shop for the best products at unbeatable prices.</p> 
+        <br> <br> <br>
+        <a href="WST LAB2 (2).html"><button style="padding: 20px; border-radius: 30px; font-size: 20px;" ><strong>SHOP NOW</strong></button></a>
+    </section>
+    <br> <br>
+
+    <section id="featured">
+        <h2 style="font-size: 30px;"><strong>FEATURED PRODCUTS</strong></h2>
+
+        <div class="product">
+            <h3>Wireless Headphones</h3>
+            <p>High-quality sound with noise cancellation.</p>
+            <p><strong>$89.99</strong></p>
+        </div>
+
+        <div class="product">
+            <h3>Smart Watch</h3>
+            <p>Track your fitness and stay connected.</p>
+            <p><strong>$129.99</strong></p>
+        </div>
+
+        <div class="product">
+            <h3>Leather Jacket</h3>
+            <p>Stylish and comfortable for all seasons.</p>
+            <p><strong>$149.99</strong></p>
+        </div>
+    </section>
+
+    <section id="discounted">
+        <h2>Discounted Products</h2>
+
+        <div class="product">
+            <h3>Running Shoes</h3>
+            <p>Lightweight and durable design.</p>
+            <p><del>$79.99</del> <strong>$59.99</strong></p>
+        </div>
+
+        <div class="product">
+            <h3>Backpack</h3>
+            <p>Perfect for travel and daily use.</p>
+            <p><del>$49.99</del> <strong>$34.99</strong></p>
+        </div>
+    </section>
+
 </body>
 </html>
