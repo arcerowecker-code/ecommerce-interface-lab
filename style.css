@@ -1,8 +1,4 @@
-/* ===============================
-   TASK 1: GLOBAL STYLES
-================================ */
 
-/* CSS VARIABLES */
 :root {
     --primary-color: #2c3e50;
     --accent-color: #e67e22;
@@ -12,7 +8,7 @@
     --border-color: #dddddd;
 }
 
-/* BODY TYPOGRAPHY */
+
 body {
     font-family: Arial, Helvetica, sans-serif; /* Sans-serif */
     background-color: var(--bg-light);
@@ -21,16 +17,13 @@ body {
     margin: 10;
 }
 
-/* HEADINGS (Distinct Style) */
+
 h1, h2, h3 {
     font-family: Georgia, "Times New Roman", serif;
     font-weight: bold;
     color: var(--primary-color);
 }
 
-/* ===============================
-   NAVIGATION STYLING
-================================ */
 
 nav a {
     text-decoration: none; /* remove underline */
@@ -40,15 +33,12 @@ nav a {
     transition: 0.3s;
 }
 
-/* HOVER EFFECT */
+
 nav a:hover {
     background-color: var(--accent-color);
     color: white;
 }
 
-/* ===============================
-   TASK 2: INTERACTIVE STATES
-================================ */
 
 button,
 input[type="submit"] {
@@ -60,26 +50,20 @@ input[type="submit"] {
     transition: 0.3s;
 }
 
-/* Hover */
 button:hover {
     background-color: var(--accent-color);
 }
 
-/* Active (Pressed Effect) */
 button:active {
     transform: scale(0.95);
     background-color: #1a252f;
 }
 
-/* Focus for accessibility */
 input:focus,
 button:focus {
     outline: 3px solid var(--accent-color);
 }
 
-/* ===============================
-   TASK 3: PRODUCT CARDS
-================================ */
 
 article {
     width: 220px;
@@ -92,7 +76,6 @@ article {
     margin: 10px;
 }
 
-/* Alternate product colors */
 article:nth-child(even) {
     background-color: #fafafa;
 }
@@ -102,36 +85,26 @@ article img {
     border-radius: 6px;
 }
 
-/* ===============================
-   TASK 4: ADVANCED SELECTORS
-================================ */
-
-/* Empty cart message styling */
 .cart-container:empty {
     background-color: #ffe6e6;
     padding: 20px;
     border: 2px dashed red;
 }
 
-/* Currency symbol automatically */
+
 .price::before {
     content: "₱ ";
     font-weight: bold;
 }
 
-/* Required fields */
 input:required {
     border: 2px solid #e67e22;
 }
 
-/* Valid fields */
 input:valid {
     border: 2px solid green;
 }
 
-/* ===============================
-   TASK 5: TABLE STYLING
-================================ */
 
 table {
     width: 100%;
@@ -144,24 +117,17 @@ th, td {
     padding: 10px;
 }
 
-/* First column styling */
 td:first-child {
     font-weight: bold;
     color: var(--primary-color);
 }
 
-/* ===============================
-   ORDER HISTORY MARKERS
-================================ */
 
 li::marker {
     color: var(--accent-color);
     font-size: 1.2em;
 }
 
-/* ===============================
-   REVIEW QUOTATION STYLING
-================================ */
 
 .review::before {
     content: "“";
