@@ -9,14 +9,32 @@
 }
 
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif; /* Sans-serif */
+    font-family: Arial, Helvetica, sans-serif;
     background-color: var(--bg-light);
     color: var(--text-main);
     line-height: 1.6;
-    margin: 10;
+    padding: 20px;
+    min-height: 100vh;
 }
 
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+h1 { font-size: 1.8rem; margin-bottom: 1rem; }
+h2 { font-size: 1.5rem; margin-bottom: 1rem; }
+h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
 
 h1, h2, h3 {
     font-family: Georgia, "Times New Roman", serif;
@@ -25,118 +43,138 @@ h1, h2, h3 {
 }
 
 
-nav a {
-    text-decoration: none; /* remove underline */
-    color: var(--primary-color);
-    padding: 6px 10px;
-    display: inline-block;
-    transition: 0.3s;
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 300px;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: var(--primary-color);
+    background: var(--card-bg);
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
 
 nav a:hover {
     background-color: var(--accent-color);
     color: white;
+    transform: translateY(-2px);
 }
 
 
 button,
-input[type="submit"] {
+input[type="submit"],
+a[href*="html"] button {
     background-color: var(--primary-color);
     color: white;
     border: none;
-    padding: 8px 15px;
+    padding: 12px 24px;
     cursor: pointer;
-    transition: 0.3s;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin: 0.5rem 0;
 }
 
 button:hover {
     background-color: var(--accent-color);
-}
-
-button:active {
-    transform: scale(0.95);
-    background-color: #1a252f;
-}
-
-input:focus,
-button:focus {
-    outline: 3px solid var(--accent-color);
+    transform: translateY(-2px);
 }
 
 
-article {
-    width: 220px;
-    display: inline-block;
-    vertical-align: top;
-    background-color: var(--card-bg);
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 50vh;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+
+article, .product {
+    background: var(--card-bg);
     border: 1px solid var(--border-color);
-    border-radius: 10px;
-    padding: 15px;
-    margin: 10px;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
-
-article:nth-child(even) {
-    background-color: #fafafa;
-}
-
-article img {
-    width: 100%;
-    border-radius: 6px;
-}
-
-.cart-container:empty {
-    background-color: #ffe6e6;
-    padding: 20px;
-    border: 2px dashed red;
-}
-
 
 .price::before {
-    content: "₱ ";
+    content: "₱";
     font-weight: bold;
-}
-
-input:required {
-    border: 2px solid #e67e22;
-}
-
-input:valid {
-    border: 2px solid green;
+    margin-right: 0.25rem;
 }
 
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    background: white;
-}
-
-th, td {
+.cart-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: var(--card-bg);
     border: 1px solid var(--border-color);
-    padding: 10px;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
-td:first-child {
+.cart-item img {
+    border-radius: 8px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+legend {
     font-weight: bold;
     color: var(--primary-color);
+    padding: 0 1rem;
 }
 
-
-li::marker {
-    color: var(--accent-color);
-    font-size: 1.2em;
+input, select {
+    padding: 12px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
 }
 
-
-.review::before {
-    content: "“";
-    font-size: 24px;
-    color: var(--accent-color);
-}
-
-.review::after {
-    content: "”";
-    font-size: 24px;
-    color: var(--accent-color);
+input:focus, select:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(230, 126, 34, 0.2);
 }
