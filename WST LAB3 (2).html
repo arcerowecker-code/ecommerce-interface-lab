@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UEPSHOP - Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="WST LAB3 (1).html" class="flex-center" style="margin-bottom: 2rem;">
+        <button>← BACK TO HOME</button>
+    </a>
+
+    <div class="container products-container">
+        <main>
+            <h1 class="text-center mb-2">All Products</h1>
+            <div class="product-grid">
+                <article>
+                    <img src="https://via.placeholder.com/300x200" alt="HEADPHONE">
+                    <h3>Wireless Headphones</h3>
+                    <p class="price">$29.99</p>
+                    <a href="WST LAB3 (3).html"><button>View Details</button></a>
+                </article>
+                <article>
+                    <img src="https://via.placeholder.com/300x200" alt="ADIDAS SHOE">
+                    <h3>Adidas Shoes</h3>
+                    <p class="price">$49.99</p>
+                    <a href="#"><button>View Details</button></a>
+                </article>
+                <article>
+                    <img src="https://via.placeholder.com/300x200" alt="PRADA">
+                    <h3>Prada Bag</h3>
+                    <p class="price">$19.99</p>
+                    <a href="#"><button>View Details</button></a>
+                </article>
+            </div>
+        </main>
+
+        <aside>
+            <h2>Filter Products</h2>
+            <form>
+                <fieldset>
+                    <legend>Category</legend>
+                    <label><input type="checkbox" name="category" value="clothing"> Clothing</label>
+                    <label><input type="checkbox" name="category" value="shoes"> Shoes</label>
+                    <label><input type="checkbox" name="category" value="accessories"> Accessories</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Sort by Price</legend>
+                    <label><input type="radio" name="sort" value="low-high"> Low to High</label>
+                    <label><input type="radio" name="sort" value="high-low"> High to Low</label>
+                </fieldset>
+                <button type="submit">Apply Filters</button>
+            </form>
+        </aside>
+    </div>
+</body>
+</html>
