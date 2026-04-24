@@ -342,3 +342,129 @@ button:hover {
 .order-card details[open] summary button {
     background: #27ae60;
 }
+
+/* ---- Extracted inline styles ---- */
+
+/* Back-button link used on all sub-pages */
+.back-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+/* Cart list (dynamic ul replacing static one) */
+#cart-list-static,
+#cart-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+/* Quantity input inside cart items */
+.qty-input {
+    width: 80px;
+}
+
+/* Cart summary / totals box */
+.cart-section {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    margin-bottom: 2rem;
+}
+
+.cart-subtotal-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.cart-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.cart-checkout-link {
+    flex: 1;
+    min-width: 200px;
+}
+
+.cart-checkout-link button {
+    width: 100%;
+}
+
+.btn-secondary {
+    background: #95a5a6;
+    width: 150px;
+}
+
+/* Empty cart message */
+#empty-cart {
+    display: none;
+    text-align: center;
+    padding: 3rem;
+    background: #fff3cd;
+    border: 2px dashed #ffc107;
+    border-radius: 12px;
+}
+
+/* Checkout page — order summary aside box */
+.order-summary-box {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+/* Account page — login form wrapper */
+.login-form-wrapper {
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Order details content area inside <details> */
+.order-detail-content {
+    padding: 1rem 0;
+}
+
+/* Wishlist section */
+#wishlist {
+    margin-top: 3rem;
+    text-align: center;
+    padding: 3rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 16px;
+}
+
+.wishlist-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.wishlist-browse-btn {
+    margin-top: 1rem;
+}
+
+/* ---- LAB6 additions (do not remove) ---- */
+
+/* Task 4: error class for invalid form fields */
+input.error {
+    border-color: #e74c3c;
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.2);
+}
+
+/* Task 6: fade-in animation triggered by JS */
+@keyframes fadeInCart {
+    0%   { opacity: 0.4; transform: scale(0.97); }
+    60%  { opacity: 1;   transform: scale(1.03); }
+    100% { opacity: 1;   transform: scale(1); }
+}
+
+article.fade-in {
+    animation: fadeInCart 0.6s ease-out forwards;
+}
