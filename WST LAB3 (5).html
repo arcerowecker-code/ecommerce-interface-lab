@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href="WST LAB3 (4).html" class="flex-center" style="margin-bottom: 2rem;">
+    <a href="WST LAB3 (4).html" class="back-link">
         <button>← BACK TO CART</button>
     </a>
 
     <div class="container">
         <h1 class="text-center mb-2">Checkout</h1>
-        
+
         <main class="checkout-layout">
             <section>
                 <h2>Shipping Information</h2>
@@ -46,20 +46,21 @@
                         </label>
                     </fieldset>
 
-                    <a href="WST LAB3 (6).html"><button>Place Order</button></a>
+                    <button type="submit">Place Order</button>
                 </form>
             </section>
 
             <aside>
                 <h2>Order Summary</h2>
-                <div style="background: var(--card-bg); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--border-color);">
-                    <p>Product Total: <span class="price">$199.99</span></p>
-                    <p>Shipping: <span class="price">$10.00</span></p>
+                <div class="order-summary-box">
+                    <p>Product Total: <span class="price">199.99</span></p>
+                    <p>Shipping: <span class="price">10.00</span></p>
                     <hr>
-                    <h3>Total: <span class="price">$209.99</span></h3>
+                    <h3>Total: <span class="price">209.99</span></h3>
                 </div>
             </aside>
         </main>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
