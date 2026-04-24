@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href="WST LAB3 (5).html" class="flex-center" style="margin-bottom: 2rem;">
+    <a href="WST LAB3 (5).html" class="back-link">
         <button>← BACK TO CHECKOUT</button>
     </a>
 
@@ -27,7 +27,7 @@
         <section id="profile-settings" class="mb-2">
             <h2 class="text-center">Account Access</h2>
             <form class="flex-center">
-                <div style="max-width: 400px; width: 100%;">
+                <div class="login-form-wrapper">
                     <div class="mb-2">
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email" required>
@@ -51,11 +51,11 @@
                         <summary>
                             <button>View Details</button>
                         </summary>
-                        <div style="padding: 1rem 0;">
-                            <p>Headphones × 2 = $59.98</p>
-                            <p>Shoes × 1 = $49.99</p>
+                        <div class="order-detail-content">
+                            <p>Headphones × 2 = ₱59.98</p>
+                            <p>Shoes × 1 = ₱49.99</p>
                             <hr>
-                            <p><strong>Total: $109.97</strong></p>
+                            <p><strong>Total: ₱109.97</strong></p>
                         </div>
                     </details>
                 </article>
@@ -67,24 +67,25 @@
                         <summary>
                             <button>View Details</button>
                         </summary>
-                        <div style="padding: 1rem 0;">
-                            <p>Prada Bag × 1 = $19.99</p>
+                        <div class="order-detail-content">
+                            <p>Prada Bag × 1 = ₱19.99</p>
                             <hr>
-                            <p><strong>Total: $19.99</strong></p>
+                            <p><strong>Total: ₱19.99</strong></p>
                         </div>
                     </details>
                 </article>
             </div>
         </section>
 
-        <section id="wishlist" style="margin-top: 3rem; text-align: center; padding: 3rem; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 16px;">
+        <section id="wishlist">
             <h2>Your Wishlist</h2>
-            <p style="font-size: 1.2rem; color: #666;">
-                Your wishlist is empty. 
+            <p class="wishlist-subtitle">
+                Your wishlist is empty.
                 <br><strong>Start shopping now!</strong>
             </p>
-            <a href="WST LAB3 (2).html"><button style="margin-top: 1rem;">Browse Products</button></a>
+            <a href="WST LAB3 (2).html"><button class="wishlist-browse-btn">Browse Products</button></a>
         </section>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
