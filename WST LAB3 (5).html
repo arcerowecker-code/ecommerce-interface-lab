@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UEPSHOP - Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="WST LAB3 (4).html" class="back-link">
+        <button>← BACK TO CART</button>
+    </a>
+
+    <div class="container">
+        <h1 class="text-center mb-2">Checkout</h1>
+
+        <main class="checkout-layout">
+            <section>
+                <h2>Shipping Information</h2>
+                <form>
+                    <fieldset>
+                        <legend>Shipping Address</legend>
+                        <div>
+                            <label for="fullname">Full Name:</label>
+                            <input type="text" id="fullname" name="fullname" required>
+                        </div>
+                        <div>
+                            <label for="street">Street Address:</label>
+                            <input type="text" id="street" name="street" required>
+                        </div>
+                        <div>
+                            <label for="zip">Zip Code:</label>
+                            <input type="text" id="zip" name="zip" required>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Payment Method</legend>
+                        <label>
+                            <input type="radio" name="payment" value="credit" required>
+                            Credit Card
+                        </label>
+                        <label>
+                            <input type="radio" name="payment" value="paypal">
+                            PayPal
+                        </label>
+                    </fieldset>
+
+                    <button type="submit">Place Order</button>
+                </form>
+            </section>
+
+            <aside>
+                <h2>Order Summary</h2>
+                <div class="order-summary-box">
+                    <p>Product Total: <span class="price">199.99</span></p>
+                    <p>Shipping: <span class="price">10.00</span></p>
+                    <hr>
+                    <h3>Total: <span class="price">209.99</span></h3>
+                </div>
+            </aside>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

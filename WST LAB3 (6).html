@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UEPSHOP - User Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="WST LAB3 (5).html" class="back-link">
+        <button>← BACK TO CHECKOUT</button>
+    </a>
+
+    <div class="container">
+
+        <header>
+            <h1>UEPSHOP Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="#order-history">Order History</a></li>
+                    <li><a href="#profile-settings">Profile</a></li>
+                    <li><a href="#wishlist">Wishlist</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="profile-settings" class="mb-2">
+            <h2 class="text-center">Account Access</h2>
+            <form class="flex-center">
+                <div class="login-form-wrapper">
+                    <div class="mb-2">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="mb-2">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit">Login / Update</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="order-history">
+            <h2>Order History</h2>
+            <div class="product-grid">
+                <article class="order-card">
+                    <h3>Order #12345</h3>
+                    <p><strong>Date:</strong> Jan 15, 2024</p>
+                    <details>
+                        <summary>
+                            <button>View Details</button>
+                        </summary>
+                        <div class="order-detail-content">
+                            <p>Headphones × 2 = ₱59.98</p>
+                            <p>Shoes × 1 = ₱49.99</p>
+                            <hr>
+                            <p><strong>Total: ₱109.97</strong></p>
+                        </div>
+                    </details>
+                </article>
+
+                <article class="order-card">
+                    <h3>Order #67890</h3>
+                    <p><strong>Date:</strong> Nov 05, 2023</p>
+                    <details>
+                        <summary>
+                            <button>View Details</button>
+                        </summary>
+                        <div class="order-detail-content">
+                            <p>Prada Bag × 1 = ₱19.99</p>
+                            <hr>
+                            <p><strong>Total: ₱19.99</strong></p>
+                        </div>
+                    </details>
+                </article>
+            </div>
+        </section>
+
+        <section id="wishlist">
+            <h2>Your Wishlist</h2>
+            <p class="wishlist-subtitle">
+                Your wishlist is empty.
+                <br><strong>Start shopping now!</strong>
+            </p>
+            <a href="WST LAB3 (2).html"><button class="wishlist-browse-btn">Browse Products</button></a>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

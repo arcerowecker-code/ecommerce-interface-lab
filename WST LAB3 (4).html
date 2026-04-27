@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UEPSHOP - Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="WST LAB3 (3).html" class="back-link">
+        <button>← BACK TO PRODUCT</button>
+    </a>
+
+    <div class="container">
+        <header>
+            <h1 class="text-center mb-2">YOUR SHOPPING CART</h1>
+        </header>
+
+        <ul id="cart-list-static">
+            <li class="cart-item">
+                <img src="https://via.placeholder.com/100x100/2c3e50/ffffff?text=👂" alt="Headphones">
+                <div>
+                    <h3>Wireless Headphones</h3>
+                    <p class="price">29.99</p>
+                    <label for="qty1">Quantity:</label>
+                    <input type="number" id="qty1" name="qty1" min="1" value="1" class="qty-input">
+                </div>
+            </li>
+            <li class="cart-item">
+                <img src="https://via.placeholder.com/100x100/e67e22/ffffff?text=👟" alt="Adidas Shoes">
+                <div>
+                    <h3>Adidas Running Shoes</h3>
+                    <p class="price">49.99</p>
+                    <label for="qty2">Quantity:</label>
+                    <input type="number" id="qty2" name="qty2" min="1" value="1" class="qty-input">
+                </div>
+            </li>
+        </ul>
+
+        <div class="cart-section">
+            <div class="cart-subtotal-row">
+                <h2>Subtotal:</h2>
+                <h2 class="price" id="cart-total">79.98</h2>
+            </div>
+            <div class="cart-actions">
+                <a href="WST LAB3 (5).html" class="cart-checkout-link">
+                    <button>Proceed to Checkout →</button>
+                </a>
+                <a href="WST LAB3 (2).html">
+                    <button class="btn-secondary">Continue Shopping</button>
+                </a>
+            </div>
+        </div>
+
+        <section id="empty-cart">
+            <h2>Your cart is empty</h2>
+            <p>Start shopping to add items to your cart!</p>
+            <a href="WST LAB3 (2).html"><button>Browse Products</button></a>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
